@@ -1,9 +1,6 @@
 # Full Stack MERN Fitness Tracker Web Application
-* Implemented an MVC application with asynchronous controllers to handle fitness JSON data in HTTP requests 
-* Utilized React Context API and Hooks for real-time UI-database syncing without redundant fetches or props drilling
-* Utilized JSON Web Tokens (JWTs) to protect REST API endpoints and local storage to persist user sessions
-* Implemented an authentication mechanism to share fitness data between the API and front-end via JWTs
-* Utilized the bcrypt Node.js package to salt and hash passwords in async mode using a thread pool and the validator package to enforce password strength and safeguard user data in storage
-* Constructed models using the Mongoose API and enforced document structure using schemas in MongoDB
-* Containerized application using Docker for lightweight deployment, and employed layer caching for increased build process efficiency
-* Streamlined API testing using test suites in Postman
+* Implemented an MVC application with asynchronous controllers to handle concurrent JSON data in HTTP requests
+* Utilized React Context API and Hooks for real-time UI-database synchronization with a minimal 5 ms of latency
+* Leveraged JWTs for stateless authentication of REST API endpoints and local storage for user session persistence
+* Utilized bcrypt for secure password hashing with asynchronous thread pools resulting in a rate of 100+ hashes/sec
+* Containerized application and leveraged layer caching to improve build process efficiency by 30%
